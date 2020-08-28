@@ -1,0 +1,23 @@
+/* CSS files add styling rules to your content */
+:root,
+body {
+  font-family: 'Poppins', Roboto, sans-serif;
+}
+body {
+  margin: 2em;
+  display: flex;
+  height:100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  font-style: bold;
+  font-weight: 800;
+  color: #0e0e0e;
+}
+
+#video {
+
+}
