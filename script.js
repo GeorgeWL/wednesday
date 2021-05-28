@@ -18,17 +18,14 @@ function getColours() {
   const blue = getColour();
   return { red, green, blue };
 }
-
-const { red, green, blue } = getColours();
-document.body.style.background = `rgba(${red}, ${green}, ${blue}, .1`;
-
-setInterval(()=>{
-    const { red, green, blue } = getColours();
-    document.body.style.background = `rgba(${red}, ${green}, ${blue}, .1`;
-},2000)
-            
+function setBackground(){
+  const { red, green, blue } = getColours();
+  document.body.style.background = `rgba(${red}, ${green}, ${blue}, .1`;
+};
+setBackground();
 if (isWednesday) {
   messageEl.innerText = "IT IS WEDNESDAY MY DUDES";
+  setInterval(()=>setBackground,2000)
 } else {
   messageEl.innerText = "NOPE";
   videoEl.remove();
