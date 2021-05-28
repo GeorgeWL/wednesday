@@ -25,7 +25,7 @@ document.body.style.background = `rgba(${red}, ${green}, ${blue}, .1`;
 setInterval(()=>{
     const { red, green, blue } = getColours();
     document.body.style.background = `rgba(${red}, ${green}, ${blue}, .1`;
-},1000)
+},2000)
             
 if (isWednesday) {
   messageEl.innerText = "IT IS WEDNESDAY MY DUDES";
