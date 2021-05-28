@@ -22,3 +22,7 @@ h1 {
 #video {
 
 }
+footer {
+    position: fixed;
+    top: 95vh;
+}
